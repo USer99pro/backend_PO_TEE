@@ -15,4 +15,15 @@ exports.showStudentsByID =  async (req , res, next) =>{
 
 exports.InsertStudent =  async (req , res, next) =>{
         const { name, age, sex, email} = req.body;
+        const std = new Student
+            std.name = name,
+            std.age = age,
+            std.sex =  sex,
+            std.email =  email
+            await std.save()
+
+            res.json({ message: "Student added successfully", student: std });
+
+
+
 }
