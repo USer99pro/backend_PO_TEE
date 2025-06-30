@@ -1,0 +1,9 @@
+./node_modules
+uploads/
+# Ignore uploaded files directory
+.env
+config/keys/
+secrets/
+# Ignore environment and secret key files for security
+cache/
+# Ignore cache directory
